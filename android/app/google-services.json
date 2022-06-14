@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "251535862149",
+    "project_id": "agenda-personalizada-9e6d5",
+    "storage_bucket": "agenda-personalizada-9e6d5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:251535862149:android:45877acae6efef8a92fcec",
+        "android_client_info": {
+          "package_name": "com.example.agenda_personalizada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "251535862149-bpu8pc9vctmpcg2oon5tpl5og99fp4ib.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8uaNOlrddhFTqKo6E6LKARDYuulUPv7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "251535862149-bpu8pc9vctmpcg2oon5tpl5og99fp4ib.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "251535862149-acq1q4vepvqn3nt4da5mnnd398r8dr12.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.agendaPersonalizada"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
