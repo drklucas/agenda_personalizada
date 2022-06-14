@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class AuthForm extends StatefulWidget {
@@ -9,6 +10,20 @@ class AuthForm extends StatefulWidget {
 }
 
 class _AuthFormState extends State<AuthForm> {
+
+  final fPassKey = GlobalKey<FormState>(); 
+  final fEmailKey = GlobalKey<FormState>();
+  final email = TextEditingController(); 
+  final password = TextEditingController(); 
+
+  bool isLogin = true; 
+  late String title; 
+  late String actionButton; 
+  late String toggleButton; 
+  bool loading = false; 
+  bool isObscure = true;
+
+  final FirebaseAuth _auth = FirebaseAuth.instance;
 
    @override
    Widget build(BuildContext context) {
