@@ -1,4 +1,3 @@
-
 import 'package:agenda_personalizada/services/auth_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
@@ -50,13 +49,23 @@ class _AuthFormState extends State<AuthForm> {
   login() async {
     setState(() => loading = true);
     try {
-      await context.read<AuthService>().login(email.text, password.text); 
+      await context.read<AuthService>().login(email.text, password.text);
     } on AuthException catch (e) {
       setState(() => loading = false);
-        ScaffoldMessenger.of(context)
+      ScaffoldMessenger.of(context)
           .showSnackBar(SnackBar(content: Text(e.message)));
     }
+  }
 
+  signup() async {
+    setState(() => loading = true);
+    try {
+      await context.read<AuthService>().signup(email.text, password.text);
+    } on AuthException catch (e) {
+      setState(() => loading = false);
+      ScaffoldMessenger.of(context)
+          .showSnackBar(SnackBar(content: Text(e.message)));
+    }
   }
 
   @override
@@ -265,7 +274,7 @@ class _AuthFormState extends State<AuthForm> {
                             child: Text(actionButton),
                             style: ButtonStyle(
                               backgroundColor: MaterialStateProperty.all(
-                                const Color.fromARGB(255, 0, 238, 255),
+                                Color.fromARGB(255, 49, 174, 105),
                               ),
                               shape: MaterialStateProperty.all(
                                 RoundedRectangleBorder(
