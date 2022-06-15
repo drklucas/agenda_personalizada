@@ -13,7 +13,6 @@ class _ContactsListScreenState extends State<ContactsListScreen> {
    @override
    Widget build(BuildContext context) {
        return Scaffold(
-           appBar: AppBar(title: const Text(''),),
            body: Container(),
        );
   }
