@@ -1,3 +1,4 @@
+import 'package:agenda_personalizada/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -24,7 +25,7 @@ class _AuthCheckState extends State<AuthCheck> {
      } else if (auth.usuario == null) {
        return const AuthScreen();
      } else {
-       return const ContactsListScreen();
+       return const HomeScreen();
      }
    }
       loading() {
